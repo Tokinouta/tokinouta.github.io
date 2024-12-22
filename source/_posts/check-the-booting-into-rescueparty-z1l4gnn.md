@@ -1,7 +1,7 @@
 ---
 title: 排查开机进 rescueParty
 date: '2024-12-22 12:37:14'
-updated: '2024-12-22 12:39:04'
+updated: '2024-12-22 12:40:39'
 tags:
   - Android
   - 无法开机
@@ -45,13 +45,13 @@ fastboot erase misc
 fastboot set_active a
 ```
 
-> ### `fastboot erase misc`​
+> ​`fastboot erase misc`​
 >
 > * **作用**：用于擦除 Android 设备中的 misc 分区的数据.
 > * **使用场景**：当设备出现因 misc 分区数据异常导致的故障，如开机卡 recovery、无法正常启动等问题时，可执行此命令来尝试修复.
 > * **注意事项**：该命令执行后，misc 分区的数据将被永久删除，操作需谨慎，若执行错误可能导致设备变砖.
 >
-> ### `fastboot set_active a`​
+> ​`fastboot set_active a`​
 >
 > * **作用**：用于将 Android 设备的活动分区设置为 a 分区.
 > * **使用场景**：在具有 a/b 分区的 Android 设备中，当需要切换活动分区以使用不同的系统版本或进行系统更新等操作时，可使用此命令.
